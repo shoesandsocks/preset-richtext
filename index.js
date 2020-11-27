@@ -15,11 +15,15 @@ export const RichTextPreset = class {
     const path = "2020/{MM}/{dd}/{slug}.md";
     const url = "2020/{MM}/{dd}/{slug}";
     const post = { path, url };
-    return ["article", "note", "photo"].map((t) => ({
-      type: t,
-      name: t,
-      post,
-    }));
+    return [
+      { type: "article", name: "ArTiClE", post },
+      { type: "note", name: "NoTe", post},
+    ];
+    // return ["article", "note", "photo"].map((t) => ({
+    //   type: t,
+    //   name: t,
+    //   post,
+    // }));
   }
 
   /**
